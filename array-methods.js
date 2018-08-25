@@ -5,7 +5,7 @@ const games = [
     {
         id: 1,
         name: 'Monopoly',
-        type: 'Board',
+        gameType: 'Board',
         minPlayers: 2,
         maxPlayers: 6,
         difficulty: 'Medium',
@@ -14,7 +14,7 @@ const games = [
     {
         id: 2,
         name: 'Chess',
-        type: 'Strategy',
+        gameType: 'Strategy',
         minPlayers: 2,
         maxPlayers: 2,
         difficulty: 'Hard',
@@ -23,7 +23,7 @@ const games = [
     {
         id: 3,
         name: 'Hearts',
-        type: 'Card',
+        gameType: 'Card',
         minPlayers: 4,
         maxPlayers: 8,
         difficulty: 'Easy',
@@ -32,7 +32,7 @@ const games = [
     {
         id: 4,
         name: 'War',
-        type: 'Card',
+        gameType: 'Card',
         minPlayers: 2,
         maxPlayers: 5,
         difficulty: 'Easy',
@@ -41,7 +41,7 @@ const games = [
     {
         id: 5,
         name: 'Risk',
-        type: 'Strategy',
+        gameType: 'Strategy',
         minPlayers: 2,
         maxPlayers: 6,
         difficulty: 'Hard',
@@ -50,7 +50,7 @@ const games = [
     {
         id: 6,
         name: 'Scrabble',
-        type: 'Word',
+        gameType: 'Word',
         minPlayers: 1,
         maxPlayers: 4,
         difficulty: 'Medium',
@@ -59,7 +59,7 @@ const games = [
     {
         id: 7,
         name: 'Boggle',
-        type: 'Word',
+        gameType: 'Word',
         minPlayers: 1,
         maxPlayers: 8,
         difficulty: 'Easy',
@@ -68,7 +68,7 @@ const games = [
     {
         id: 8,
         name: 'Clue',
-        type: 'Board',
+        gameType: 'Board',
         minPlayers: 3,
         maxPlayers: 6,
         difficulty: 'Easy',
@@ -77,7 +77,7 @@ const games = [
     {
         id: 9,
         name: 'Ticket to Ride',
-        type: 'Strategy',
+        gameType: 'Strategy',
         minPlayers: 2,
         maxPlayers: 6,
         difficulty: 'Hard',
@@ -86,7 +86,7 @@ const games = [
     {
         id: 10,
         name: 'Checkers',
-        type: 'Board',
+        gameType: 'Board',
         minPlayers: 2,
         maxPlayers: 2,
         difficulty: 'Easy',
@@ -95,7 +95,7 @@ const games = [
     {
         id: 11,
         name: 'Trivial Pursuit',
-        type: 'Trivia',
+        gameType: 'Trivia',
         minPlayers: 2,
         maxPlayers: 5,
         difficulty: 'Hard',
@@ -104,7 +104,7 @@ const games = [
     {
         id: 12,
         name: 'Mastermind',
-        type: 'Puzzle',
+        gameType: 'Puzzle',
         minPlayers: 2,
         maxPlayers: 3,
         difficulty: 'Medium',
@@ -113,7 +113,7 @@ const games = [
     {
         id: 13,
         name: 'Settlers of Catan',
-        type: 'Strategy',
+        gameType: 'Strategy',
         minPlayers: 2,
         maxPlayers: 6,
         difficulty: 'Medium',
@@ -122,7 +122,7 @@ const games = [
     {
         id: 14,
         name: 'Slapjack',
-        type: 'Card',
+        gameType: 'Card',
         minPlayers: 2,
         maxPlayers: 4,
         difficulty: 'Easy',
@@ -131,7 +131,7 @@ const games = [
     {
         id: 15,
         name: 'The Game of Life',
-        type: 'Board',
+        gameType: 'Board',
         minPlayers: 2,
         maxPlayers: 6,
         difficulty: 'Easy',
@@ -140,7 +140,7 @@ const games = [
     {
         id: 16,
         name: 'Codenames',
-        type: 'Board',
+        gameType: 'Board',
         minPlayers: 4,
         maxPlayers: 8,
         difficulty: 'Medium',
@@ -149,7 +149,7 @@ const games = [
     {
         id: 17,
         name: 'Candy Land',
-        type: 'Board',
+        gameType: 'Board',
         minPlayers: 2,
         maxPlayers: 4,
         difficulty: 'Easy',
@@ -158,7 +158,7 @@ const games = [
     {
         id: 18,
         name: 'Carcassone',
-        type: 'Strategy',
+        gameType: 'Strategy',
         minPlayers: 2,
         maxPlayers: 5,
         difficulty: 'Medium',
@@ -167,7 +167,7 @@ const games = [
     {
         id: 19,
         name: 'Battleship',
-        type: 'Board',
+        gameType: 'Board',
         minPlayers: 2,
         maxPlayers: 2,
         difficulty: 'Easy',
@@ -176,7 +176,7 @@ const games = [
     {
         id: 20,
         name: 'Poker',
-        type: 'Card',
+        gameType: 'Card',
         minPlayers: 4,
         maxPlayers: 6,
         difficulty: 'Medium',
