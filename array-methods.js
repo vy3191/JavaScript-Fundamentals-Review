@@ -187,6 +187,9 @@ const games = [
 
 // **Question 1: A customer has come into the game shop and wants to view the card game section. Using ForEach, 
 //show the customer a list of all the card games
+ games.forEach(function(ele){
+       console.log(ele.name);
+});
 
 
 
@@ -194,17 +197,48 @@ const games = [
 //**Question 2: The shop owner would like to create a booklet that tells the following for each game in his store:
 // "Our store has GAMENAME, a TYPE game for MINPLAYERS to MAXPLAYERS players." Use Map to export that statement for
 //each game.
+let statement = games.map(function(element){
+      return `Our store has ${element.name}, a ${element.gameType} for ${element.minPlayers} to ${element.maxPlayers} players.`;
+});
 
+console.log(statement);
 
 
 //**Question 3: The shop owner would like to create 3 lists of games. Easy, medium and hard difficulty so 
 //customers can quickly find the level they're looking for. Use Filter to return three arrays sorted by difficulty
+   function getThreeArrays(arr) {
+         let filterArray = [];
+         let easyArray = arr.filter(function(ele){
+               return ele.difficulty === 'Easy';
+          });
+         
+         let mediumArray = arr.filter(function(ele){
+              return ele.difficulty === 'Medium';
+         });
+         let hardArray = arr.filter(function(ele){
+              return ele.difficulty === 'Hard';
+         });
 
+          filterArray.push(easyArray);
+          filterArray.push(mediumArray);
+          filterArray.push(hardArray);
+
+          return filterArray;
+   }
+
+   console.log(getThreeArrays(games));
 
 
 //**Question 4: A customer is hosting a party that will have 5 players in total. She would like a list of all the 
 //games that her group of friends could play, appropriate for 5 players. Return an array list of those games.
 
+let myArray = games.filter(function(element) {
+                return element.maxPlayers === 5;
+             }).map(function(element){
+                return element.name; 
+             });
+
+console.log(myArray);             
 
 
 //**Question 5: A buyer for a neaby toy store wants to come in and purchase 5 of every Easy game, 3 of every Medium game
